@@ -35,9 +35,14 @@
   color: #747474;
   font-weight: 500;
   padding: 1vw 2.3vw;
-  background-color: white;
+  background-color: #f5faff;
   font-size: max(1vw, 13px);
   border-radius: 50px;
+  cursor: pointer;
+}
+
+.header-contents button:hover {
+  background-color: #f2f2f2;
 }
 
 @media (max-width: 1050px) {
