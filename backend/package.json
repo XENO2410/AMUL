@@ -7,12 +7,12 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "npm install && npm rebuild bcrypt --build-from-source"
+    "build": "npm install"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
     "body": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
