@@ -1,3 +1,4 @@
+// backend\config\db.js
 import mongoose, { connect } from "mongoose";
 
 export const connectDB = async () => {
