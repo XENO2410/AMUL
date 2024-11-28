@@ -1,6 +1,13 @@
 // backend\config\db.js
-import mongoose, { connect } from "mongoose";
+import mongoose from "mongoose";
 
 export const connectDB = async () => {
-    await mongoose.connect('mongodb+srv://amulnsut:b5bqmTeWPxAAKDcN@cluster0.smu6tfj.mongodb.net/amul').then(()=>console.log("DB connected"));
+    try {
+        const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://amulnsut:b5bqmTeWPxAAKDcN@cluster0.smu6tfj.mongodb.net/amul';
+        await mongoose.connect(mongoURI);
+        console.log("DB connected");
+    } catch (error) {
+        console.error("DB Connection Error:", error);
+        process.exit(1);
+    }
 }
