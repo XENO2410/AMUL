@@ -1,1 +1,1 @@
-# AMUL-NSUT
+# AMUL NSUT
